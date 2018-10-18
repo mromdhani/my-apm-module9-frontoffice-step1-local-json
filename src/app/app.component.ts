@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-apm-module9-frontoffice-step1-local-json';
+  pageTitle: string = `My Acme Product Management (Module 9 - Http Client From Local JSON)`;
 }
