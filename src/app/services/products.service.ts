@@ -16,7 +16,7 @@ export class ProductsService {
       return this._http.get<IProduct[]>(this._productUrl)
          // .map((response: Response) => <IProduct[]> response.json())  // No more needed since 4.3
         // .do(data => console.log('All: ' +  JSON.stringify(data)))
-        // the do operator has been renamed to tap, because do is a reserved keyword in JavaScript.
+         // the do operator has been renamed to tap, because do is a reserved keyword in JavaScript.
                                                        // Regarder ici https://alligator.io/angular/angular-6/
         .pipe(
           tap(data => console.log('All: ' +  JSON.stringify(data)))
